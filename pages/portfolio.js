@@ -1,0 +1,31 @@
+import fsPromises from 'fs/promises';
+import path from 'path'
+import Project from '../components/project';
+
+export async function getStaticProps() {
+    const filePath = path.join(process.cwd(), "projects.json");
+    const jsonData = await fsPromises.readFile(filePath);
+    const projects = JSON.parse(jsonData);
+
+    console.log(projects);
+
+    return {
+        props: {
+            projects
+        }
+    }
+}
+
+export default function Portfolio({ projects }) {
+    console.log(projects);
+    return (
+        <div className="container">
+            <h1>Portfolio</h1>
+            <div className="grid">
+                {projects.map((project, i) => (
+                    <Project key={i} project={project} />
+                ))}
+            </div>
+        </div>
+    )
+}

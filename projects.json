@@ -1,0 +1,24 @@
+[
+    {
+        "name": "CHIP-8 Web Toolchain",
+        "image": "/images/chip8-web-toolchain.png",
+        "url": "chip8-web-toolchain/index.html",
+        "description": "A virtual machine, disassembler, debugger, and compiler toolchain for the CHIP-8. The toolchain was built with Rust, and exposed to a web-interface via WebAssembly.\n\n",
+        "technologies": [
+            "Rust",
+            "WebAssembly",
+            "Webpack",
+            "HTML/CSS/JS"
+        ]
+    },
+    {
+        "name": "rs2",
+        "image": "/images/rs2.png",
+        "url": "https://github.com/retro-git/rs2",
+        "description": "A mod for the game Spyro 2 on the PS1. Written in C, the mod hooks original game functionality to add new features, controlled by an in-game menu. Development required extensive reverse-engineering of the game with Ghidra.",
+        "technologies": [
+            "C",
+            "Ghidra"
+        ]
+    }
+]
