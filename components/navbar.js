@@ -13,11 +13,11 @@ export default function Navbar() {
     const router = useRouter();
 
     return (
-        <div class={styles.navbar}>
+        <div className={styles.navbar}>
             <ul>
                 <li className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link></li>
-                {pages.map((page, index) => {
-                    return <li className={router.pathname == `/${page.toLowerCase()}` ? styles.active : ""}><Link href={`/${page.toLowerCase()}`}>{page}</Link></li>
+                {pages.map((page, i) => {
+                    return <li key={i} className={router.pathname == `/${page.toLowerCase()}` ? styles.active : ""}><Link href={`/${page.toLowerCase()}`}>{page}</Link></li>
                 })}
             </ul>
         </div>
