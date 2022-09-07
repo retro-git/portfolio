@@ -25,13 +25,40 @@
         "name": "spyro.run",
         "image": "/images/spyrorun.png",
         "url": "http://www.spyro.run/prachack.html",
-        "description": "An alternative client-side only frontend for *speedrun.com* leaderboards, with more advanced filtering and sorting options. A Python script dumps the necessary data via the speedrun.com API, and is rendered by a React frontend. Also includes an online patcher for *rs2*.",
+        "description": "An alternative client-side only frontend for *speedrun.com* leaderboards, with more advanced filtering/sorting. A Python script dumps the necessary data via the speedrun.com API, and is rendered by a React frontend. Also includes an online patcher for *rs2*.",
         "technologies": [
             "React",
             "Webpack",
             "Python",
             "SQLite",
             "HTML/CSS/JS"
+        ]
+    },
+    {
+        "name": "placeholder",
+        "image": "",
+        "url": "/chip8-web-toolchain/index.html",
+        "description": "placeholder",
+        "technologies": [
+            "placeholder"
+        ]
+    },
+    {
+        "name": "placeholder",
+        "image": "",
+        "url": "https://github.com/retro-git/rs2",
+        "description": "placeholder",
+        "technologies": [
+            "placeholder"
+        ]
+    },
+    {
+        "name": "placeholder",
+        "image": "",
+        "url": "http://www.spyro.run/prachack.html",
+        "description": "placeholder",
+        "technologies": [
+            "placeholder"
         ]
     }
 ]
