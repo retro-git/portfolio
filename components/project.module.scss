@@ -1,13 +1,12 @@
 .project {
-    display: grid;
     text-align: center;
     padding: 0.25em;
     margin: 0.25em;
     border-radius: 1vw;
     background: hsl(0, 0%, 13%);
-    margin:.3em;
-    border:0px;
-    padding:0px;
+    margin: .3em;
+    border: 0px;
+    padding: 0px;
     transition: background .25s ease;
 }
 
@@ -23,31 +22,34 @@
     -webkit-text-stroke-color: black;
     font-size: 1.75rem;
     font-weight: bold;
-    margin:0px;
-    border:0px;
-    padding:0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
 
 .description {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    margin:0px;
-    border:0px;
-    padding:.5em;
+    margin: 0px;
+    border: 0px;
+    padding: .5em;
+}
+
+.techgrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.1em;
+    flex-wrap: wrap;
 }
 
 .technology {
-    display: inline-block;
-    font-size: 1.25rem;
-    margin:0px;
-    border:0px;
-    padding:0px;
-}
-
-.ul {
-    margin:0px;
-    border:0px;
-    padding:.3em;
+    font-size: 1.25em;
+    margin: 5px 5px;
+    border: 0px;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 10px;
 }
 
 .img {
@@ -58,7 +60,7 @@
     border-bottom-right-radius: 1vw;
     border-top-right-radius: 1vw;
 
-    margin:0px;
-    border:0px;
-    padding:0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }

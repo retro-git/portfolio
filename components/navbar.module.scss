@@ -1,0 +1,20 @@
+.navbar > ul > li {
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navbar > ul > li.menu-item:not(:last-child) { 
+    margin: 13px;  
+    color: red;
+ }
+
+.navbar {
+    text-align: center;
+    padding: 1px;
+    // background-color: rgb(76, 76, 76);
+}
