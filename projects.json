@@ -2,7 +2,7 @@
     {
         "name": "CHIP-8 Web Toolchain",
         "image": "/images/chip8-web-toolchain.png",
-        "url": "chip8-web-toolchain/index.html",
+        "url": "https://retro-git.github.io/chip8-web-toolchain/",
         "description": "A virtual machine, disassembler, debugger, and compiler toolchain for the CHIP-8. The toolchain was built with Rust, and exposed to a web-interface via WebAssembly.\n\n",
         "technologies": [
             "Rust",

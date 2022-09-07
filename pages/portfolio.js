@@ -1,6 +1,7 @@
 import fsPromises from 'fs/promises';
 import path from 'path'
 import Project from '../components/project';
+import styles from "../styles/Portfolio.module.scss";
 
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), "projects.json");
@@ -17,15 +18,11 @@ export async function getStaticProps() {
 }
 
 export default function Portfolio({ projects }) {
-    console.log(projects);
     return (
-        <div className="container">
-            <h1>Portfolio</h1>
-            <div className="grid">
-                {projects.map((project, i) => (
-                    <Project key={i} project={project} />
-                ))}
-            </div>
+        <div className={styles["project-grid"]}>
+            {projects.map((project, i) => (
+                <Project key={i} project={project} />
+            ))}
         </div>
     )
 }

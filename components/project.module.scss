@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */
+}
+
+.project {
+    text-align: center;
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: 1vw;
+    background: hsl(230, 8%, 15%);
+}
+
+.project:hover {
+    background: hsl(230, 8%, 20%);
+    cursor: pointer;
+}

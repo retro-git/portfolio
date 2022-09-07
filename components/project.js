@@ -1,17 +1,17 @@
-import styles from './project.module.css';
 import Image from 'next/image';
+import styles from './project.module.scss';
 
 export default function Project({ project }) {
     return (
-        <>
-            <h1>{project.name}</h1>
-            <p>{project.description}</p>
-            <Image
-              priority
-              src={project.image}
-              height={180}
-              width={320}
+        <div className={styles.project} onClick={() => window.open(project.url)}>
+            <h1 className={styles.title}>{project.name}</h1>
+            <Image className={styles.img}
+                priority
+                src={project.image}
+                width={520}
+                height={320}
             />
-        </>
+                        <p>{project.description}</p>
+        </div >
     )
 }

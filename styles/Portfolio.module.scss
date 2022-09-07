@@ -1,0 +1,15 @@
+$fullscreen-columns: 3;
+$fullscreen-fit-percent: 30%;
+$fullscreen-text-size: 1.1vw;
+
+.project-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat($fullscreen-columns, fit-content($fullscreen-fit-percent));
+}
+
+@media only screen and (max-width: 1200px) {
+  .project-grid {
+      grid-template-columns: fit-content(100%);
+  }
+}
