@@ -3,7 +3,7 @@
         "name": "CHIP-8 Web Toolchain",
         "image": "/images/chip8-web-toolchain.png",
         "url": "/chip8-web-toolchain/index.html",
-        "description": "A virtual machine, disassembler, debugger, and compiler toolchain for the CHIP-8. The toolchain was built with Rust, and exposed to a web-interface via WebAssembly.\n\n",
+        "description": "An interpeter, disassembler, debugger, and compiler toolchain for the CHIP-8 virtual machine. The toolchain was built with Rust and exposed to a web-interface via WebAssembly.\n\n",
         "technologies": [
             "Rust",
             "WebAssembly",
@@ -15,10 +15,23 @@
         "name": "rs2",
         "image": "/images/rs2.png",
         "url": "https://github.com/retro-git/rs2",
-        "description": "A mod for the PS1 game *Spyro 2*. Written in C, the mod hooks original game functionality to add new features, controlled by an in-game menu. Development required extensive reverse-engineering of the game with Ghidra.",
+        "description": "A mod for the PS1 game *Spyro 2*. Written in C, the mod hooks original game functionality to add a variety of new features, and can be controlled by an in-game menu. Development required extensive reverse-engineering of the game's functions and data structures with Ghidra.",
         "technologies": [
             "C",
             "Ghidra"
+        ]
+    },
+    {
+        "name": "spyro.run",
+        "image": "/images/spyrorun.png",
+        "url": "http://www.spyro.run/prachack.html",
+        "description": "An alternative client-side only frontend for *speedrun.com* leaderboards, with more advanced filtering and sorting options. A Python script dumps the necessary data via the speedrun.com API, and is rendered by a React frontend. Also includes an online patcher for *rs2*.",
+        "technologies": [
+            "React",
+            "Webpack",
+            "Python",
+            "SQLite",
+            "HTML/CSS/JS"
         ]
     }
 ]
