@@ -5,7 +5,7 @@ import styles from "./navbar.module.scss"
 import { useRouter } from "next/router";
 
 const pages = [
-    "Portfolio"
+    "Portfolio",
 ]
 
 export default function Navbar() {
@@ -15,9 +15,9 @@ export default function Navbar() {
     return (
         <div className={styles.navbar}>
             <ul>
-                <li className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link></li>
+                <li title="Home" className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link></li>
                 {pages.map((page, i) => {
-                    return <li key={i} className={router.pathname == `/${page.toLowerCase()}` ? styles.active : ""}><Link href={`/${page.toLowerCase()}`}>{page}</Link></li>
+                    return <li key={i} title={page} className={router.pathname == `/${page.toLowerCase()}` ? styles.active : ""}><Link href={`/${page.toLowerCase()}`}>{page}</Link></li>
                 })}
             </ul>
         </div>

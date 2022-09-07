@@ -4,6 +4,16 @@
     font-size: 1.5rem;
 }
 
+.navbar > ul > li::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0px;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+}
+
 .navbar > ul > li:hover {
     color:red;
 }
@@ -11,11 +21,6 @@
 .active {
     font-weight: bold;
 }
-
-.navbar > ul > li.menu-item:not(:last-child) { 
-    margin: 13px;  
-    color: red;
- }
 
 .navbar {
     text-align: center;
