@@ -4,6 +4,10 @@
     font-size: 1.5rem;
 }
 
+.navbar > ul > li:hover {
+    color:red;
+}
+
 .active {
     font-weight: bold;
 }
