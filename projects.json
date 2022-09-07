@@ -8,15 +8,14 @@
             "Rust",
             "WebAssembly",
             "Webpack",
-            "HTML/CSS/JS",
-            "asd"
+            "HTML/CSS/JS"
         ]
     },
     {
         "name": "rs2",
         "image": "/images/rs2.png",
         "url": "https://github.com/retro-git/rs2",
-        "description": "A mod for the game Spyro 2 on the PS1. Written in C, the mod hooks original game functionality to add new features, controlled by an in-game menu. Development required extensive reverse-engineering of the game with Ghidra.",
+        "description": "A mod for the PS1 game Spyro 2. Written in C, the mod hooks original game functionality to add new features, controlled by an in-game menu. Development required extensive reverse-engineering of the game with Ghidra.",
         "technologies": [
             "C",
             "Ghidra"
