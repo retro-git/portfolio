@@ -1,9 +1,9 @@
 @use "sass:math";
 
 $fullscreen-columns: 3;
-// $fullscreen-fit-percent: calc(400px - 1vw);
-// $fullscreen-fit-percent: 25vw;
-$fullscreen-fit-factor: 500px;
+// $fullscreen-fit-factor: calc(400px - 1vw);
+$fullscreen-fit-factor: 25%;
+// $fullscreen-fit-factor: calc(500px - 8vw);
 
 .project-grid {
   display: grid;
