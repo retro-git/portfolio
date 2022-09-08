@@ -1,3 +1,5 @@
+@import '../styles/palette';
+
 .navbar > ul > li {
     display: inline-block;
     margin-right: 2rem;
@@ -20,7 +22,7 @@
 }
 
 .navbar > ul > li:hover {
-    color:red;
+    color:$red-primary;
 }
 
 .active {
