@@ -1,10 +1,14 @@
+@use "sass:math";
+
 $fullscreen-columns: 3;
-$fullscreen-fit-percent: 25%;
+// $fullscreen-fit-percent: calc(400px - 1vw);
+// $fullscreen-fit-percent: 25vw;
+$fullscreen-fit-factor: 500px;
 
 .project-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat($fullscreen-columns, fit-content($fullscreen-fit-percent));
+  grid-template-columns: repeat($fullscreen-columns, fit-content($fullscreen-fit-factor));
 }
 
 @media only screen and (max-width: 1200px) {
