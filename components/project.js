@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import styles from './project.module.scss';
 import { marked } from 'marked';
-import  React, { useRef, useLayoutEffect } from 'react';
+import  React, { useRef, useEffect } from 'react';
 
 export default function Project({ project }) {
     const descContainerRef = useRef();
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         if (descContainerRef.current) {
             descContainerRef.current.firstElementChild.classList.add(styles.description);
         }
