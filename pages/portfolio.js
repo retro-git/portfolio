@@ -3,6 +3,7 @@ import path from 'path'
 import Project from '../components/project';
 import styles from "../styles/Portfolio.module.scss";
 import Navbar from '../components/navbar'
+import React, { useRef, useState } from 'react'
 
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), "projects.json");
