@@ -26,8 +26,28 @@ function Box(props) {
     )
 }
 
+export function Plane({normal, displacement}) {
+    const ref = useRef();
+    useFrame((state, delta) => (console.log(ref)));
+    return (
+        <>
+            <planeHelper ref={ref} args={[new THREE.Plane(normal, displacement), 10, 0x00ff00]} />
+        </>
+    )
+}
+
+export function Arrow({position, direction, length, color}) {
+    const ref = useRef();
+    useFrame((state, delta) => (console.log(ref)));
+    return (
+        <>
+            <arrowHelper ref={ref} args={[direction, position, length, color]} />
+        </>
+    )
+}
+
 export default function Test() {
-    let normal = new THREE.Vector3(1, 5, 3);
+    let normal = new THREE.Vector3(3, 5, 3);
     let displacement = 3;
     const plane = new THREE.Plane(normal.clone(), displacement);
     const point = new THREE.Vector3(0, 0, -2);
@@ -41,11 +61,16 @@ export default function Test() {
                 <OrbitControls />
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
-                <planeHelper args={[plane.clone(), 10, 0x00ff00]} />
-                <arrowHelper args={[point.clone().normalize(), new THREE.Vector3(0, 0, 0), point.clone().length(), 0x00ff00]} />
+                {/* <planeHelper args={[plane.clone(), 10, 0x00ff00]} /> */}
+                <Plane normal={normal} displacement={displacement} />
+                {/* <arrowHelper args={[point.clone().normalize(), new THREE.Vector3(0, 0, 0), point.clone().length(), 0x00ff00]} />
                 <arrowHelper args={[normal.clone().normalize(), centerPointOnPlane.clone(), 1, 0x00ff00]} />
                 <arrowHelper args={[pointToPointOnPlane.clone().normalize(), point.clone(), pointToPointOnPlane.clone().length(), 0x00ff00]} />
-                <arrowHelper args={[projected.clone().normalize(), point.clone(), projected.clone().length(), 0x00ff00]} />
+                <arrowHelper args={[projected.clone().normalize(), point.clone(), projected.clone().length(), 0x00ff00]} /> */}
+                <Arrow position={new THREE.Vector3(0, 0, 0)} direction={point.clone().normalize()} length={point.clone().length()} color={0x00ff00} />
+                <Arrow position={centerPointOnPlane.clone()} direction={normal.clone().normalize()} length={1} color={0x00ff00} />
+                <Arrow position={point.clone()} direction={pointToPointOnPlane.clone().normalize()} length={pointToPointOnPlane.clone().length()} color={0x00ff00} />
+                <Arrow position={point.clone()} direction={projected.clone().normalize()} length={projected.clone().length()} color={0x00ff00} />
                 <Box position={[10, 20, 0]} />
             </Canvas>
         </div>
