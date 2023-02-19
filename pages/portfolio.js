@@ -6,7 +6,7 @@ import Navbar from '../components/navbar'
 import React, { useRef, useState } from 'react'
 
 export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), "projects.json");
+    const filePath = path.join(process.cwd(), "data/projects.json");
     const jsonData = await fsPromises.readFile(filePath);
     const projects = JSON.parse(jsonData);
 
