@@ -9,22 +9,30 @@
             "WebAssembly",
             "Webpack",
             "HTML/CSS/JS"
+        ],
+        "links": [
+            "https://github.com/retro-git/chip8-web-toolchain"
         ]
     },
     {
         "name": "rs2",
         "image": "/images/rs2.png",
         "url": "https://github.com/retro-git/rs2",
-        "description": "A mod for the PS1 game *Spyro 2*. Written in C, the mod hooks original game functionality to add a variety of new features, controlled by an in-game menu. Required extensive reverse-engineering of the game's functions and data structures with Ghidra.",
+        "description": "A mod for the PS1 game *Spyro 2*. Written in C, the mod hooks game functions to add a variety of new features, controlled by an in-game menu. Required extensive reverse-engineering of the game's functions and data structures with Ghidra.",
         "technologies": [
             "C",
+            "Bash",
             "Ghidra"
+        ],
+        "links": [
+            "https://github.com/retro-git/rs2",
+            "https://www.youtube.com/watch?v=njPkQnrKqTM"
         ]
     },
     {
         "name": "spyro.run",
         "image": "/images/spyrorun.png",
-        "url": "http://www.spyro.run/prachack.html",
+        "url": "http://www.spyro.run/boards.html",
         "description": "An alternative frontend for *speedrun.com* leaderboards, with more advanced filtering/sorting. A Python script dumps the necessary data via the speedrun.com API, and is rendered by a React frontend.",
         "technologies": [
             "React",
@@ -32,33 +40,9 @@
             "Python",
             "SQLite",
             "HTML/CSS/JS"
-        ]
-    },
-    {
-        "name": "placeholder",
-        "image": "",
-        "url": "",
-        "description": "placeholder",
-        "technologies": [
-            "placeholder"
-        ]
-    },
-    {
-        "name": "placeholder",
-        "image": "",
-        "url": "",
-        "description": "placeholder",
-        "technologies": [
-            "placeholder"
-        ]
-    },
-    {
-        "name": "placeholder",
-        "image": "",
-        "url": "",
-        "description": "placeholder",
-        "technologies": [
-            "placeholder"
+        ],
+        "links": [
+            "https://github.com/retro-git/spyro.run"
         ]
     }
 ]

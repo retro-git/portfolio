@@ -1,25 +1,48 @@
 @import '../styles/palette';
 
 .project {
-    display:flex;
-    flex-direction: column;
+    background: $grey-primary;
+    // display:flex;
+    // flex-direction: column;
+    // // text-align: center;
+    // // padding: 0.25em;
+    margin: 0.1em;
+    border-radius: 1vw;
+    // background: $grey-primary;
+    // margin: .3em;
+    // // border: 0px;
+    // // padding: 0px;
+    // background: $grey-primary;
+    // outline-color: black;
+    // outline-style: auto;
+    // outline-width: 100px;
+    z-index: 1;
+}
+
+.projectbody {
+    transition: background .25s ease;
+    // display:flex;
+    // flex-direction: column;
     text-align: center;
     padding: 0.25em;
-    margin: 0.25em;
+    // margin: 0.25em;
     border-radius: 1vw;
     background: $grey-primary;
-    margin: .3em;
+    // margin: .3em;
     border: 0px;
     padding: 0px;
-    transition: background .25s ease;
+    margin: 0em;
 }
 
-.project:hover {
+.projectbody:hover {
     background: $grey-secondary;
     cursor: pointer;
+
 }
+ 
 
 .title {
+    cursor: auto;
     text-align: center;
     color:$red-primary;
     -webkit-text-stroke-width: 1px;
@@ -27,7 +50,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0px;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
     border: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
@@ -52,6 +75,18 @@
     flex-wrap: wrap;
 }
 
+.linkgrid {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialmediaicon {
+    margin: 0em 1em;
+    margin-top: 0em;
+    margin-bottom: 0.1em;
+}
+
 .technology {
     font-size: .8em;
     margin: 5px 5px;
@@ -73,4 +108,5 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
+    
 }
