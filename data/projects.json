@@ -18,7 +18,7 @@
         "name": "rs2",
         "image": "/images/rs2.png",
         "url": "https://github.com/retro-git/rs2",
-        "description": "A mod for the PS1 game *Spyro 2*. Written in C, the mod hooks game functions to add a variety of new features, controlled by an in-game menu. Required extensive reverse-engineering of the game's functions and data structures with Ghidra.",
+        "description": "A mod for *Spyro 2*. Written in C, the mod hooks game functions to add a variety of new features, controlled by an in-game menu. Required extensive reverse-engineering of the game's functions and data structures with Ghidra.",
         "technologies": [
             "C",
             "Bash",
