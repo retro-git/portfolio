@@ -4,11 +4,12 @@ import { marked } from 'marked';
 import React, { useRef, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
-// component for each social media icon/link
 const SocialMediaIcon = ({ url }) => {
+    let bgColor = url.includes("github") ? "#000000" : "";
+
     return (
         <div className={styles.socialmediaicon}>
-            <SocialIcon url={url} style={{ height: 30, width: 30 }} />
+            <SocialIcon bgColor={bgColor} fgColor="#ffffff" url={url} style={{ height: 30, width: 30 }} />
         </div>
     )
 }
