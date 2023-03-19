@@ -5,14 +5,14 @@ $fullscreen-columns: 3;
 $fullscreen-fit-factor: 25%;
 // $fullscreen-fit-factor: calc(500px - 8vw);
 
-.project-grid {
+.item-grid {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat($fullscreen-columns, fit-content($fullscreen-fit-factor));
 }
 
 @media only screen and (max-width: 1200px) {
-  .project-grid {
+  .item-grid {
       grid-template-columns: fit-content(100%);
   }
 }

@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 const pages = [
     "Portfolio",
+    "Consoles",
 ]
 
 export default function Navbar() {

@@ -1,0 +1,109 @@
+@import '../styles/palette';
+
+$fullscreen-columns: 2;
+// $fullscreen-fit-factor: calc(400px - 1vw);
+$fullscreen-fit-factor: 40%;
+// $fullscreen-fit-factor: calc(500px - 8vw);
+
+.console-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat($fullscreen-columns, fit-content($fullscreen-fit-factor));
+}
+
+@media only screen and (max-width: 1200px) {
+  .console-grid {
+      grid-template-columns: fit-content(100%);
+  }
+
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    // color: $grey-secondary;
+  }
+  
+  .console {
+    background-color: $grey-primary;
+    //rounded corners
+    border-radius: 1vw;
+    margin: 0.2em;
+  }
+  
+  .consolebody {
+      text-align: center;
+      display: grid;
+      //make columns instead of rows
+      grid-template-columns: 1.5fr 1fr;
+      // justify-content: center;
+      margin: 0.5em;
+      border: 1em;
+      grid-gap: 5px;
+      //outline between columns
+  
+  }
+  
+  .description {
+  }
+  
+  .modgrid {
+    // margin-top: auto;
+    // position: relative;
+    // bottom: 0px;
+  
+    //move to top
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.1em;
+    flex-wrap: wrap;
+    // outline: 1px solid red;
+  }
+  
+  .mod {
+    font-size: .8em;
+    margin: 5px 5px;
+    border: 0px;
+    padding: 5px;
+    background-color: $red-primary;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .grid {
+    display: grid;
+    margin: 0px;
+    border: 0px;
+    // grid-template-columns: repeat(1, minmax(300px, 1fr));
+    // grid-gap: 1rem;
+    // margin: 1rem;
+  }
+  
+  .img {
+    object-fit: cover;
+  
+    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 1vw;
+  
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    
+  }
+  
+  // .console-grid {
+  //   display: grid;
+  //   text-emphasis: center;
+  //   justify-content: center;
+  //   grid-template-columns: repeat(1, minmax(300px, 1fr));
+  //   grid-gap: 1rem;
+  //   margin: 1rem;
+  // }

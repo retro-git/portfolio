@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Nintendo 64 NTSC-J",
+        "mods": [
+            "N64Digital HDMI",
+            "Replaced capacitors"
+        ],
+        "description": "My Japanese N64 in Grape Purple.",
+        "image": "/images/chip8-web-toolchain.png"
+    },
+    {
+        "name": "PlayStation 1 NTSC-J",
+        "mods": [
+            "PS1Digital HDMI",
+            "XStation Optical Drive Emulator",
+            "Replaced capacitors",
+            "Replaced PSU with European version"
+        ],
+        "description": "My Japanese PS1.",
+        "image": "/images/chip8-web-toolchain.png"
+    },
+    {
+        "name": "Super Famicom 1CHIP",
+        "mods": [
+            "Replaced capacitors"
+        ],
+        "description": "My Japanese Super Famicom. This is the rare 1CHIP motherboard revision, which is known for having better video quality.",
+        "image": "/images/chip8-web-toolchain.png"
+    },
+    {
+        "name": "AV Famicom",
+        "mods": [
+            "NESRGB",
+            "Replaced capacitors"
+        ],
+        "description": "My Japanese Famicom. This is the late model AV Famicom - the last model to be released in Japan, which was sold new until as late as 2003!",
+        "image": "/images/chip8-web-toolchain.png"
+    },
+    {
+        "name": "Analogue Super Nt",
+        "mods": [
+            "None"
+        ],
+        "description": "Technically not a retro console, this is an FPGA recreation of the Super Nintendo.",
+        "image": "/images/chip8-web-toolchain.png"
+    }
+]
