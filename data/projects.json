@@ -48,7 +48,7 @@
         "name": "OrbArena",
         "image": "/images/orbarena.png",
         "url": "https://www.youtube.com/watch?v=btKIUfx_7BA",
-        "description": "A 3D game where the aim is to survive as long as possible, fighting off waves of enemies.",
+        "description": "A 3D game where the aim is to survive as long as possible, fighting off waves of enemies. Enemies become more numerous and aggressive as time goes on.",
         "technologies": [
             "C++",
             "OpenFrameworks",
@@ -56,6 +56,21 @@
         ],
         "links": [
             "https://github.com/retro-git/Orbarena",
+            "https://www.youtube.com/watch?v=btKIUfx_7BA"
+        ]
+    },
+    {
+        "name": "UE Target/Parry/Chase System",
+        "image": "/images/eqs.png",
+        "url": "https://www.youtube.com/watch?v=btKIUfx_7BA",
+        "description": "A combat system for Unreal Engine, where the player can target and parry enemies. Also includes an algorithm for enemies to chase the player.",
+        "technologies": [
+            "C++",
+            "Unreal Engine",
+            "Blueprints"
+        ],
+        "links": [
+            "https://github.com/retro-git/dsc",
             "https://www.youtube.com/watch?v=btKIUfx_7BA"
         ]
     }

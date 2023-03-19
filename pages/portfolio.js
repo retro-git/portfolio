@@ -26,22 +26,23 @@ export default function Portfolio({ projects }) {
     const numProjectsPerRow = 3;
     //get number of rows
     const numRows = Math.ceil(numProjects / numProjectsPerRow);
-    //get number of projects in last row
-    const numProjectsInLastRow = numProjects % numProjectsPerRow;
-    //split projects into the last row and the rest
-    const projectsInLastRow = projects.slice(numProjects - numProjectsInLastRow);
-    const projectsInRows = projects.slice(0, numProjects - numProjectsInLastRow);
+    //get number of projects in first row
+    const numProjectsInFirstRow = numProjects - (numRows - 1) * numProjectsPerRow;
+    //get projects in first row
+    const projectsInFirstRow = projects.slice(0, numProjectsInFirstRow);
+    //get projects in rest of rows
+    const projectsInRestOfRows = projects.slice(numProjectsInFirstRow, numProjects);
 
     return (
         <>
             <Navbar />
             <div className={styles["project-grid"]}>
-                {projectsInRows.map((project, i) => (
+                {projectsInFirstRow.map((project, i) => (
                     <Project key={i} project={project} />
                 ))}
             </div>
             <div className={styles["project-grid"]}>
-                {projectsInLastRow.map((project, i) => (
+                {projectsInRestOfRows.map((project, i) => (
                     <Project key={i} project={project} />
                 ))}
             </div>
