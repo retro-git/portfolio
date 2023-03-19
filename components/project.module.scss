@@ -17,6 +17,7 @@
     // outline-style: auto;
     // outline-width: 100px;
     z-index: 1;
+    transition: background .25s ease;
 }
 
 .projectbody {
@@ -27,19 +28,27 @@
     padding: 0.25em;
     // margin: 0.25em;
     border-radius: 1vw;
-    background: $grey-primary;
+    // background: $grey-primary;
     // margin: .3em;
     border: 0px;
     padding: 0px;
     margin: 0em;
 }
 
-.projectbody:hover {
+// .projecthead {
+//     //dont change background color even when hovering
+//         background: $grey-primary;
+// }
+
+.project:hover {
     background: $grey-secondary;
-    cursor: pointer;
+    // cursor: pointer;
 
 }
- 
+
+.projectbody:hover {
+    cursor:pointer;
+}
 
 .title {
     cursor: auto;
@@ -54,6 +63,10 @@
     border: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
+}
+
+.title:hover {
+    cursor: pointer;
 }
 
 .description {

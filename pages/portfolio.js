@@ -20,11 +20,28 @@ export async function getStaticProps() {
 }
 
 export default function Portfolio({ projects }) {
+    //get number of projects
+    const numProjects = projects.length;
+    //get number of projects per row
+    const numProjectsPerRow = 3;
+    //get number of rows
+    const numRows = Math.ceil(numProjects / numProjectsPerRow);
+    //get number of projects in last row
+    const numProjectsInLastRow = numProjects % numProjectsPerRow;
+    //split projects into the last row and the rest
+    const projectsInLastRow = projects.slice(numProjects - numProjectsInLastRow);
+    const projectsInRows = projects.slice(0, numProjects - numProjectsInLastRow);
+
     return (
         <>
             <Navbar />
             <div className={styles["project-grid"]}>
-                {projects.map((project, i) => (
+                {projectsInRows.map((project, i) => (
+                    <Project key={i} project={project} />
+                ))}
+            </div>
+            <div className={styles["project-grid"]}>
+                {projectsInLastRow.map((project, i) => (
                     <Project key={i} project={project} />
                 ))}
             </div>

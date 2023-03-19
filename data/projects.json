@@ -6,9 +6,9 @@
         "description": "An interpeter, disassembler, debugger, and compiler toolchain for the CHIP-8 virtual machine. Compiles a custom language to the CHIP-8 bytecode. Built in Rust and exposed to a web-interface via WebAssembly.\n\n",
         "technologies": [
             "Rust",
+            "JS",
             "WebAssembly",
-            "Webpack",
-            "HTML/CSS/JS"
+            "Webpack"
         ],
         "links": [
             "https://github.com/retro-git/chip8-web-toolchain"
@@ -36,10 +36,9 @@
         "description": "An alternative frontend for *speedrun.com* leaderboards, with more advanced filtering/sorting. A Python script dumps the necessary data via the speedrun.com API, and is rendered by a React frontend.",
         "technologies": [
             "React",
-            "Webpack",
             "Python",
             "SQLite",
-            "HTML/CSS/JS"
+            "JS"
         ],
         "links": [
             "https://github.com/retro-git/spyro.run"
