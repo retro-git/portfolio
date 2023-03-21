@@ -5,8 +5,8 @@
             "N64Digital HDMI",
             "Replaced capacitors"
         ],
-        "description": "My Japanese N64 in Grape Purple.",
-        "image": "/images/chip8-web-toolchain.png"
+        "description": "Possibly my favourite console, the N64 in Grape Purple.",
+        "image": "/images/n64.jpg"
     },
     {
         "name": "PlayStation 1 NTSC-J",
@@ -16,16 +16,16 @@
             "Replaced capacitors",
             "Replaced PSU with European version"
         ],
-        "description": "My Japanese PS1.",
-        "image": "/images/chip8-web-toolchain.png"
+        "description": "The most heavily modded console. Took around 10 hours to do all the mods. The disc drive has been replaced so games can be played from SD card.",
+        "image": "/images/ps1.jpg"
     },
     {
         "name": "Super Famicom 1CHIP",
         "mods": [
             "Replaced capacitors"
         ],
-        "description": "My Japanese Super Famicom. This is the rare 1CHIP motherboard revision, which is known for having better video quality.",
-        "image": "/images/chip8-web-toolchain.png"
+        "description": "My Japanese Super Famicom. This is the rare 1CHIP motherboard revision, which is known for better video quality.",
+        "image": "/images/snes.jpg"
     },
     {
         "name": "AV Famicom",
@@ -33,8 +33,8 @@
             "NESRGB",
             "Replaced capacitors"
         ],
-        "description": "My Japanese Famicom. This is the late model AV Famicom - the last model to be released in Japan, which was sold new until as late as 2003!",
-        "image": "/images/chip8-web-toolchain.png"
+        "description": "My Japanese Famicom. This is the late model AV Famicom - the last model to be released in Japan, which was sold until as late as 2003!",
+        "image": "/images/nes.jpg"
     },
     {
         "name": "Analogue Super Nt",
@@ -42,6 +42,6 @@
             "None"
         ],
         "description": "Technically not a retro console, this is an FPGA recreation of the Super Nintendo.",
-        "image": "/images/chip8-web-toolchain.png"
+        "image": "/images/supernt.jpg"
     }
 ]

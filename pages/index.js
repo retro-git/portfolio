@@ -20,7 +20,7 @@ export default function Home() {
             Welcome!
           </h1>
           <p className={styles.description}>
-            I'm Sam, a programmer with a love for all things gaming (and a soft-spot for retro/indie games). I'm interested in game modding and console modding (check out my <a href="/consoles">collection!</a>). I also have a background in <a href="https://www.youtube.com/@retro1/videos">speedrunning.</a>
+            I'm Sam, a programmer with a love for all things gaming (and a soft spot for retro games). I'm interested in game modding and console modding (check out my <a href="/consoles">collection!</a>). I also have a background in <a href="https://www.youtube.com/@retro1/videos">speedrunning.</a>
           </p>
           <div className={styles.grid}>
             <a href="/portfolio" className={styles.card}>
