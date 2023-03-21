@@ -9,6 +9,7 @@ export default function Home() {
   // introductory text about me
   return (
     <>
+      <Navbar />
       <div className={styles.container}>
         <Head>
           <title>Home</title>

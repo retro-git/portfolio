@@ -61,7 +61,8 @@ const Console = ({ item }) => {
 export default function Consoles({ consoles }) {
     return (
         <>
-            <Grid items={consoles} component={Console} style={styles["console-grid"] } numitemsPerRow={2}/>
+            <Navbar />
+            <Grid items={consoles} component={Console} style={styles["console-grid"]} numitemsPerRow={2} />
         </>
     )
 }

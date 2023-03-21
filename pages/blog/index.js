@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 //Generating the Static Props for the Blog Page
-export async function getStaticProps(){
+export async function getStaticProps() {
     // get list of files from the posts folder
     const files = fs.readdirSync('posts');
 
@@ -15,36 +15,40 @@ export async function getStaticProps(){
         const { data: frontmatter } = matter(readFile);
 
         return {
-          slug,
-          frontmatter,
+            slug,
+            frontmatter,
         };
     });
 
     // Return the pages static props
     return {
         props: {
-          posts,
+            posts,
         },
     };
 }
 
 // The Blog Page Content
-export default function Blog({posts}){
-    return <main>
-        {posts.map(post => {
-            //extract slug and frontmatter
-            const {slug, frontmatter} = post
-            //extract frontmatter properties
-            const {title, author, category, date, bannerImage, tags} = frontmatter
+export default function Blog({ posts }) {
+    return (
+        <>
+            <Navbar />
+            <main>
+                {posts.map(post => {
+                    //extract slug and frontmatter
+                    const { slug, frontmatter } = post
+                    //extract frontmatter properties
+                    const { title, author, category, date, bannerImage, tags } = frontmatter
 
-            //JSX for individual blog listing
-            return <article key={title}>
-                <Link href={`/blog/${slug}`}>
-                    <h1>{title}</h1>
-                </Link>
-                <h3>{author}</h3>
-                <h3>{date}</h3>
-            </article>
-        })}
-    </main>
+                    //JSX for individual blog listing
+                    return <article key={title}>
+                        <Link href={`/blog/${slug}`}>
+                            <h1>{title}</h1>
+                        </Link>
+                        <h3>{author}</h3>
+                        <h3>{date}</h3>
+                    </article>
+                })}
+            </main>
+        </>)
 }
