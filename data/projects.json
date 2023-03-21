@@ -62,7 +62,7 @@
     {
         "name": "UE Target/Parry/Chase System",
         "image": "/images/eqs.png",
-        "url": "https://www.youtube.com/watch?v=btKIUfx_7BA",
+        "url": "https://github.com/retro-git/dsc",
         "description": "A combat system for Unreal Engine, where the player can target and parry enemies. Also includes an algorithm for enemies to chase the player.",
         "technologies": [
             "C++",
@@ -70,8 +70,7 @@
             "Blueprints"
         ],
         "links": [
-            "https://github.com/retro-git/dsc",
-            "https://www.youtube.com/watch?v=btKIUfx_7BA"
+            "https://github.com/retro-git/dsc"
         ]
     }
 ]
