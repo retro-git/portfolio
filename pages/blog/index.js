@@ -32,7 +32,6 @@ export async function getStaticProps() {
 export default function Blog({ posts }) {
     return (
         <>
-            <Navbar />
             <main>
                 {posts.map(post => {
                     //extract slug and frontmatter
