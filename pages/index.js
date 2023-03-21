@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -24,8 +25,10 @@ export default function Home() {
           </p>
           <div className={styles.grid}>
             <Link href="/portfolio" className={styles.card}>
-              <h2>Portfolio &rarr;</h2>
-              <p>Check out some of my projects!</p>
+              <div>
+                <h2>Portfolio</h2>
+                <p>Check out some of my projects!</p>
+              </div>
             </Link>
           </div>
         </main>
