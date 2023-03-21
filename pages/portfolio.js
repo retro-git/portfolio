@@ -79,7 +79,6 @@ const Project = ({ item }) => {
 export default function Portfolio({ projects }) {
     return (
         <>
-            <Navbar />
             <Grid items={projects} component={Project} style={styles["project-grid"]} numitemsPerRow={3}/>
         </>
     )
