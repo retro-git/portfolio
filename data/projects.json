@@ -1,5 +1,18 @@
 [
     {
+        "name": "Abstract GameShark Language",
+        "image": "/images/agl.png",
+        "url": "https://github.com/retro-git/agl/",
+        "description": "A domain-specific language for the GameShark device, which is notoriously archaic to read or write codes for. Built with a custom parser using LALRPOP, this tool allows users to write GameShark codes in a much nicer syntax.",
+        "technologies": [
+            "Rust",
+            "LALRPOP"
+        ],
+        "links": [
+            "https://github.com/retro-git/agl/"
+        ]
+    },
+    {
         "name": "CHIP-8 Web Toolchain",
         "image": "/images/chip8-web-toolchain.png",
         "url": "/chip8-web-toolchain/index.html",
