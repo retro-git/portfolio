@@ -1,15 +1,17 @@
 [
     {
-        "name": "Abstract GameShark Language",
+        "name": "Abstract GameShark Language (AGL)",
         "image": "/images/agl.png",
         "url": "https://github.com/retro-git/agl/",
-        "description": "A domain-specific language for the GameShark device, which is notoriously archaic to read or write codes for. Built with a custom parser using LALRPOP, this tool allows users to write GameShark codes in a much nicer syntax.",
+        "description": "A domain-specific language for the GameShark device. This tool allows users to write GameShark codes in a much nicer syntax. There is also a graphical live editor for the tool, built with C#/WPF, allowing usage without the command-line version.",
         "technologies": [
             "Rust",
-            "LALRPOP"
+            "C#",
+            "WPF"
         ],
         "links": [
-            "https://github.com/retro-git/agl/"
+            "https://github.com/retro-git/agl/",
+            "https://github.com/retro-git/AGLEditor/"
         ]
     },
     {
