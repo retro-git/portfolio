@@ -7,7 +7,8 @@
         "technologies": [
             "Rust",
             "C#",
-            "WPF"
+            "WPF",
+            "GitHub Actions"
         ],
         "links": [
             "https://github.com/retro-git/agl/",
@@ -23,8 +24,7 @@
             "Rust",
             "JS",
             "WebAssembly",
-            "Webpack",
-            "GitHub Actions"
+            "Webpack"
         ],
         "links": [
             "https://github.com/retro-git/chip8-web-toolchain"
