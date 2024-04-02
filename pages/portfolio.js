@@ -80,6 +80,7 @@ export default function Portfolio({ projects }) {
     return (
         <>
         <Navbar />
+            <center><h3><a href="https://www.youtube.com/@retro-meister/videos">YouTube channel</a></h3></center>
             <Grid items={projects} component={Project} style={styles["project-grid"]} numitemsPerRow={3}/>
         </>
     )
